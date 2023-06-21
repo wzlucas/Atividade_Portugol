@@ -1,0 +1,13 @@
+1.
+programa
+{
+	
+	funcao inicio()
+	{
+		escreva("a) Em um ano há ", 24*365, " horas.\n")
+		escreva("b) Em uma década há ", 60*24*365*10, " minuto.\n")
+		escreva("c) Minha idade em segundo é ", 60*24*365*16,".\n")
+		escreva("d) Pretendo comer ", 104*80, " doces.\n")
+		escreva("e) Minha idade vai ser de ",977000000/(365*24*60*60)," anos.")
+	}
+}
