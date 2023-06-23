@@ -1,0 +1,117 @@
+1.
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro numero = 20
+
+		enquanto( numero >= 1)
+    {
+
+		escreva(numero ," \n")
+
+		numero --
+			
+		}
+	}
+}
+
+
+2.
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro numero = 1
+
+		enquanto( numero <= 20)
+    {
+
+		escreva(numero ," \n")
+
+		numero ++
+	  }
+	}
+}
+
+
+3.
+programa
+{
+	
+	funcao inicio ()
+	{
+		inteiro  numero = 1
+
+		enquanto (numero <= 20)
+    {
+
+	  escreva (numero , " ")
+			
+ 
+		numero ++
+	  }
+	}
+}
+
+
+4.
+programa
+{
+	
+	funcao inicio()
+	{
+	     inteiro numero = 1
+
+		enquanto( numero <= 50)
+    {
+
+		se ( numero % 2 != 0) 
+       {
+       escreva(numero, "\n") 
+       }
+				
+		numero = numero + 1
+	  }
+	
+	}
+}
+
+
+5.
+programa
+{
+	
+	funcao inicio()
+	{
+	  inteiro i = 1
+		inteiro numero
+
+		escreva("Escreva um número: ")
+		leia(numero)
+		
+		escreva("\n")
+
+    enquanto( i <= numero )
+    {
+
+		escreva(i ," \n")
+
+		i ++
+
+    }
+
+    escreva("\n\n\n")
+    
+    enquanto( numero >= 1 )
+		{
+
+		escreva(numero ," \n")
+
+		numero --
+		}
+		
+	}
+}
