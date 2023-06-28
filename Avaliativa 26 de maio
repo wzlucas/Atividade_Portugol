@@ -11,3 +11,61 @@ programa
 		escreva("e) Minha idade vai ser de ",977000000/(365*24*60*60)," anos.")
 	}
 }
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro segundos = 1
+inteiro minutos  =60 * segundos
+inteiro horas = 60 * minutos
+inteiro dia = 24 * horas
+inteiro anos = 365 * dia
+inteiro idade
+inteiro idademercurio
+inteiro planeta
+inteiro idadep
+
+escreva("Digite sua idade em anos: ")
+leia(idade)
+
+escreva("Escolha o planeta em que você está:\n")
+escreva("1 - Terra\n")
+escreva("2 - Mercúrio\n")
+escreva("3 - Vênus\n")
+escreva("4 - Marte\n")
+escreva("5 - Júpiter\n")
+escreva("6 - Urano\n")
+escreva("7 - Netuno\n")
+
+leia(planeta)
+
+escolha (planeta)
+    {caso 1:
+        idadep = idade
+        escreva("Sua idade na Terra é: ", idadep, " anos terrestres.\n")
+
+    caso 2:
+        idadep = idade / 0.2408467
+        escreva("Sua idade em Mercúrio é: ", idadep, " anos terrestres.\n")
+    caso 3:
+        idadep = idade / 0.61519726
+        escreva("Sua idade em Vênus é: ", idadep, " anos terrestres.\n")
+    caso 4:
+        idadep = idade / 1.8808158
+        escreva("Sua idade em Marte é: ", idadep, " anos terrestres.\n")
+     caso 5:
+        idadep = idade / 11.862615
+        escreva("Sua idade em Júpiter é: ", idadep, " anos terrestres.\n")
+     caso 6:
+        idadep = idade / 84.016846
+        escreva("Sua idade em Urano é: ", idadep, " anos terrestres.\n")
+     caso 7:
+        idadep = idade / 164.79132
+        escreva("Sua idade em Netuno é: ", idadep, " anos terrestres.\n")
+     caso contrario:
+        escreva("Opção inválida! Por favor, escolha uma opção válida.\n")
+
+}
+	}
+}
