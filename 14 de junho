@@ -1,0 +1,115 @@
+1.
+programa
+{
+	inclua biblioteca Matematica
+ --> m
+	
+	funcao inicio()
+	{
+    real litros_necessarios
+    inteiro latas_necessarias
+    real area_pintada
+    real preco_total
+    inteiro uma_lata = 18
+
+    escreva("Qual o tamnho da area a ser pintada:")
+    leia(area_pintada)
+
+    litros_necessarios = area_pintada*area_pintada* 1/3 
+    latas_necessarias = litros_necessarios / uma_lata
+    preco_total = latas_necessarias * 480.00
+   
+    escreva("\nQuantidade de latas de tinta a serem compradas: ", latas_necessarias, " latas\n")
+    escreva("Preço total: R$ ", preco_total)
+
+
+
+	}
+}
+
+
+2.
+programa
+{
+	inclua biblioteca Matematica
+ --> m
+	
+	funcao inicio()
+	{
+	    real a 
+	    real b
+	    real bn
+	    real c
+	    real delta
+	    real x1 = 1
+	    real x2 = 1
+	    
+	    escreva("Digite um valor para a: ")
+	    leia(a)
+	    escreva("Digite um valor para b: ")
+	    leia(b)
+	    escreva("Digite um valor para c: ")
+	    leia(c)
+	    
+	    bn = b - b * 2
+	    delta= b*b - 4*a*c
+	
+	    
+	    se (delta > 0 )
+	    {
+	        x1 = bn + delta / 2*a
+	        x2 = bn - delta / 2*a
+	    }
+	    senao se(delta == 0 )
+	    {
+	        x1 = bn / 2*a
+	        x2 = x1
+	    }
+	
+	    escreva("\nResultados:")
+	    escreva("Valor de a: \n ", a)
+	    escreva("Valor de b: \n", b)
+	    escreva("Valor de c: \n", c)
+	    escreva("Valor de delta: \n", delta)
+	    
+	    se (delta > 0 )
+	    {
+	        escreva("Valor de x1: ", x1)
+	        escreva("Valor de x2: ", x2)
+	    }
+
+	}
+}
+
+
+3.
+programa
+{
+	
+	funcao inicio()
+	{
+	    
+
+
+         inteiro dias  
+         inteiro horas
+         inteiro minutos
+         inteiro segundos
+         inteiro total_sec
+
+	    escreva("Digite a quantidade de dias: ")
+	    leia(dias)
+	    escreva("Digite a quantidade de horas: ")
+	    leia(horas)
+	    escreva("Digite a quantidade de minutos: ")
+	    leia(minutos)
+	    escreva("Digite a quantidade de segundos: ")
+	    leia(segundos)
+	    
+	    total_sec = segundos + minutos * 60 + horas*60*60 + dias*24*60*60
+	
+	    escreva("\nTotal de segundos: ", total_sec, " segundos")
+
+
+	}
+}
