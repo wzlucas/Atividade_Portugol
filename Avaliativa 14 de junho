@@ -113,3 +113,72 @@ programa
 
 	}
 }
+
+
+4.
+programa
+{
+	
+	funcao inicio()
+	{
+	
+	   inteiro KmPercorrido, diaAlugado
+        real ppd, ppKm, precoTotal
+
+	   
+	   escreva("Diga a quantidade de quilômetros percorridos: ")
+	   leia(KmPercorrido)
+	
+	   
+	   escreva("Diga a quantidade de dias pelo qual o carro foi alugado: ")
+	   leia(diaAlugado)
+	
+	   
+	   ppd = 60.00
+	   ppKm = 0.15
+	
+	   
+	   precoTotal = (ppd * diaAlugado) + (ppKm * KmPercorrido)
+	
+	   
+	   escreva("O preço total a pagar pelo aluguel do carro é de:  ", precoTotal)
+
+	}
+}
+
+
+5.
+
+6.
+programa
+{
+	inclua biblioteca Matematica
+	
+	funcao inicio()
+	{
+	
+         real n1, n2, mn
+
+	
+	   escreva("Digite o primeiro número: ")
+	   leia(n1)
+	
+	   
+	   escreva("Digite o segundo número: ")
+	   leia(n2)
+	
+	   
+	   se (n1 > n2)
+	   {
+	      mn = n1
+	   }
+	  
+	   senao
+	   {
+	     mn = n2
+	   }
+	
+	   escreva("O maior número é: ", mn)
+
+	}
+}
