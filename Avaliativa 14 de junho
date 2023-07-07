@@ -1,7 +1,7 @@
 1.
 programa
 {
-	inclua biblioteca Matematica --> m
+	inclua biblioteca Matematica --> mat
 	
 	funcao inicio()
 	{
@@ -28,7 +28,7 @@ programa
 2.
 programa
 {
-	inclua biblioteca Matematica --> m
+	inclua biblioteca Matematica --> mat
 	
 	funcao inicio()
 	{
@@ -142,11 +142,31 @@ programa
 
 
 5.
+programa
+{
+	inclua biblioteca Matematica
+ --> mat
+	
+	funcao inicio()
+	{
+	
+           escreva("\n a. (Verdadeiro) 2 * 4 == 24/3")
+		 escreva("\n b. (Falso) (15 % 4) < (19 % 6)")
+		 escreva("\n c. (Falso) nao(2 < 5) != (8 == 8)")
+		 escreva("\n d. (Verdadeiro) verdadeiro ou falso")
+		 escreva("\n e. (Verdadeiro) 2*2 == Matematica.potencia(2, 2)")
+		 escreva("\n f. (Falso) verdadeiro e ( (7 / 2) > 3.5 )")
+		 escreva("\n g. (Verdadeiro) (Mat.arredondar( 2.8, 0 ) == 3) e (Mat.raiz(9) ==3)")
+     
+
+	}
+}
+
 
 6.
 programa
 {
-	inclua biblioteca Matematica -->
+	inclua biblioteca Matematica --> mat
 	
 	funcao inicio()
 	{
@@ -339,6 +359,30 @@ programa
 
 
 10.
+programa
+{
+	
+	funcao inicio()
+	{
+
+	     cadeia letra 
+	
+	   
+	    escreva("Digite uma letra: ")
+	    leia(letra)
+	
+	    se (letra == "a" ou letra == "e" ou letra == "i" ou letra == "o" ou letra == "u") 
+	    {
+	        escreva("A letra digitada é uma vogal.")
+	    }
+	    senao
+	    {
+	        escreva("A letra digitada é uma consoante.")
+	    }
+
+	}
+}
+
 
 11.
 programa
@@ -529,7 +573,7 @@ programa
 		
 	     inteiro cod
 	     inteiro quant
-		real valorT
+		real valorT = 0
 		
 		
 		escreva("Digite o código do item pedido: ")
@@ -571,6 +615,7 @@ programa
 		{
 		    escreva("Código inválido.")
 		}
+		
 		se (cod >= 100 e cod <= 106)
 		{
 		    escreva("O valor total a ser pago é: ", valorT)
@@ -578,4 +623,3 @@ programa
 
 	}
 }
-INCOMPLETO
