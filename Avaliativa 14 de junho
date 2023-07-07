@@ -336,3 +336,246 @@ programa
 	      
 	}
 }
+
+
+10.
+
+11.
+programa
+{
+	
+	funcao inicio()
+	{
+		
+		real num1, num2, num3, maior, meio, menor
+		
+		
+		escreva("Digite o primeiro número: ")
+		leia(num1)
+		
+		escreva("Digite o segundo número: ")
+		leia(num2)
+		
+		escreva("Digite o terceiro número: ")
+		leia(num3)
+		
+		se (num1 >= num2 e num1 >= num3)
+		{
+		   maior = num1
+		
+		   se (num2 >= num3)
+		   { 
+		      meio = num2
+		      menor = num3
+		   }
+		   senao
+		   {
+		      meio = num3
+		      menor = num2
+		   }
+		}
+   
+	     senao se (num2 >= num1 e num2 >= num3)
+	     {
+		   maior = num2
+		
+		   se (num1 >= num3 )
+		   {
+		      meio = num1
+		      menor = num3
+		   }
+		   senao
+		   {
+		      meio = num3
+		      menor = num1
+	        }
+	     }
+		senao
+		{
+		   maior = num3
+		
+		   se ( num1 >= num2 )
+	        {   
+		      meio = num1
+		      menor = num2
+		   }
+		   senao
+		   {
+		      meio = num2
+		      menor = num1
+		   }
+	      }
+	      
+		 escreva("Os números em ordem decrescente são: ", maior, ", ", meio, ", ", menor)
+
+	}
+}
+
+
+12.
+programa
+{
+	
+	funcao inicio()
+	{
+		
+	     inteiro ano
+		inteiro ano_atual = 2023
+		
+		escreva("Digite o ano: ")
+		leia(ano)
+		
+		
+		se (ano <= 0)
+		{
+		    ano = ano_atual
+		
+		}
+		se (ano % 4 == 0)
+		{
+		    se (ano % 100 == 0)
+		    {    
+		    	   se (ano % 400 == 0)
+		    
+		            escreva("O ano ", ano, " é bissexto.")
+		            
+		        senao
+		           
+		            escreva("O ano ", ano, " não é bissexto.")
+		    }    
+		    senao
+		        escreva("O ano ", ano, " é bissexto.")
+		}   
+		senao
+		{
+		    escreva("O ano ", ano, " não é bissexto.")
+		}
+	}
+}
+
+
+13.
+programa
+{
+	
+	funcao inicio()
+	{
+		
+		real veloC, veloL, veloE
+		real valorM
+		
+		veloL = 80
+		
+		
+		escreva("Digite a velocidade do carro (em Km/h): ")
+		leia(veloC)
+		
+		
+		se (veloC > veloL)
+		{ 
+		    veloE = veloeC - veloL
+		    valorM = veloE * 7
+		    escreva("Você foi multado! A velocidade excedida foi de ", veloE, "Km/h.")
+		    escreva("A multa a ser paga é de R$", valorM)
+		}
+		senao
+		{
+		    escreva("Velocidade dentro do limite permitido.")
+		}
+		
+	}
+}
+
+
+14.
+programa
+{
+	
+	funcao inicio()
+	{
+	
+		real n1, n2, media
+
+		escreva("Digite a primeira nota: ")
+		leia(n1)
+		
+		escreva("Digite a segunda nota: ")
+		leia(n2)
+			
+		media = (n1 + n2) / 2
+		
+		se (media == 10)
+		{
+		    escreva("Aprovado com exelência")
+		}
+		senao se (media >= 7)
+		{  
+		    escreva("Aprovado")
+		}
+		senao
+		{		   
+		    escreva("Reprovado")
+	        }
+	}
+}
+
+
+15.
+programa
+{
+	
+	funcao inicio()
+	{
+		
+	     inteiro cod
+	     inteiro quant
+		real valorT
+		
+		
+		escreva("Digite o código do item pedido: ")
+		leia(cod)
+		
+		escreva("Digite a quantidade desejada: ")
+		leia(quant)
+		
+		
+		se (cod == 100)
+		{ 
+		    valorT = 5.00 * quant
+		}
+		senao se (cod == 101)
+		{
+		    valorT = 2.60 * quant
+		}
+		senao se (cod == 102)
+		{
+		    valorT = 3.80 * quant
+		}
+		senao se (cod == 103)
+		{
+		    valorT = 9.00 * quant
+		}
+		senao se (cod == 104) 
+		{
+		    valorT = 11.00 * quant
+		}   
+		senao se (cod == 105)
+		{ 
+		    valorT = 3.00 * quant
+		}
+		senao se (cod == 106)
+		{
+		    valorT = 1000.00 * quant
+		}
+		senao
+		{
+		    escreva("Código inválido.")
+		}
+		se (cod >= 100 e cod <= 106)
+		{
+		    escreva("O valor total a ser pago é: ", valorT)
+		}
+
+	}
+}
+INCOMPLETO
